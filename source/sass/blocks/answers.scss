@@ -1,0 +1,113 @@
+.answers {
+    padding-top: 96px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.answers__title {
+    position: relative;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    padding: 0;
+    padding-bottom: 40px;
+    margin: 0;
+
+    &::before {
+        content:"";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 1px;
+        bottom: 0;       
+        background-color: #ffffff;        
+    }
+}
+
+.answers__block-title {
+    font-family: "Mplus";
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 400;
+    padding-top: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.answers__text {
+    display: none;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.answers__text {
+    display: none;
+}
+
+.answers__accordeon-container {
+    position: relative;
+}
+
+.answers__accordeon-container--opened .answers__text {
+    display: block;
+}
+
+.answers__btn {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    right: 0;
+}
+
+@media (min-width: $tablet-width) {
+    .answers {
+        flex-direction: row;
+        justify-content: space-between;
+    }     
+
+    .answers__title {        
+        font-size: 60px;
+        line-height: 60px;
+        width: 200px;
+
+        &::before {
+            height: 0;
+        }
+    }
+
+    .answers__section {
+        padding-left: 98px;
+        width: calc(100vw - 200px);
+    }
+
+    .answers__block-title {
+        padding-top: 30px;
+        margin-bottom: 25px;
+    }   
+
+    .answers__text {
+        padding-bottom: 30px;
+    }
+
+    .answers__info:first-child {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}    
+
+@media (min-width: $desktop-width) {
+    .answers {
+        padding-top: 150px;
+        margin-bottom: 113px;
+    }
+
+    .answers__title {        
+        font-size: 80px;
+        line-height: 80px;
+    }    
+}    

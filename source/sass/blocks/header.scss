@@ -1,0 +1,186 @@
+.header {
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.header__slider {
+    position: relative;
+    background-color: #0B0A0D;
+    padding-top: 150px;
+}
+
+.header__slide {
+    background-color: #f5f1ee;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 207px;
+    padding-left: 20px;
+    height: 450px;
+    box-sizing: border-box;
+    background-position: center;  
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+}
+
+.header__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 85px;
+    padding: 0;
+    margin: 0;
+}
+
+.header__slide--first {
+    background-image: url("../img/slide1-mobile.jpg");  
+    
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/slide1-mobile@2x.jpg");
+        background-size: auto 450px;
+    }
+}   
+
+.header__slide--second {
+    background-image: url("../img/slide1-mobile.jpg");
+    
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/slide1-mobile@2x.jpg");
+        background-size: auto 450px;
+    }
+}  
+
+.header__slide--third {
+    background-image: url("../img/slide1-mobile.jpg");  
+    
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/slide1-mobile@2x.jpg");
+        background-size: auto 450px;
+    }
+}  
+
+.header__slider .slick-prev {
+    left: 44px;
+    bottom: -28px;
+    top: auto;
+    width: 100px;
+    height: 0;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100px;
+        height: 26px;
+        opacity: 1;
+        background-repeat: no-repeat;
+        background-image: url("../img/arrow-left.svg");
+        z-index: 10;
+    }
+}
+
+.header__slider .slick-next {
+    bottom: -28px;
+    top: auto;
+    right: 44px;
+    width: 100px;
+    height: 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100px;
+        height: 26px;
+        opacity: 1;        
+        background-repeat: no-repeat;
+        background-image: url("../img/arrow-right.svg");
+        z-index: 10;
+    }
+}    
+
+@media (min-width: $tablet-width) {
+   .header {
+    padding-bottom: 100px;
+   }
+
+    .header__slide {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 50px;
+        padding-top: 206px;
+        height: 500px;
+    }    
+
+    .header__slider .slick-slide {
+        padding-top: 300px;
+    }
+
+    .header__title {
+        font-size: 60px;
+        line-height: 65px;
+    }
+
+    .header__slider .slick-prev {
+        left: 30px;
+    }   
+    
+    .header__slider .slick-next {
+        right: 30px;
+    }  
+
+    .header__slide--first {
+        background-image: url("../img/slide1.jpg");        
+    
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+            background-image: url("../img/slide1@2x.jpg");
+            background-size: auto 650px;
+        }
+    }   
+    
+    .header__slide--second {
+        background-image: url("../img/slide1.jpg");
+        
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+            background-image: url("../img/slide1@2x.jpg");
+            background-size: auto 650px;
+        }
+    }  
+    
+    .header__slide--third {
+        background-image: url("../img/slide1.jpg");  
+        
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+            background-image: url("../img/slide1@2x.jpg");
+            background-size: auto 650px;
+        }
+    }
+    
+    .header__slider .slick-prev {
+        left: calc(100vw / 2 - 132px);
+        bottom: -62px;
+    }   
+    
+    .header__slider .slick-next {
+        right: calc(100vw / 2 - 120px);
+        bottom: -62px;
+    }  
+}    
+
+@media (min-width: $desktop-width) {
+    .header__slide {
+        width: 1240px;
+        height: 714px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }   
+
+    .header__title {
+        font-size: 80px;
+        line-height: 85px;
+    }
+
+    .header__slider .slick-slide {
+        padding-top: 468px;
+    }
+}    

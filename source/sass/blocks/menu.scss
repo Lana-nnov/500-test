@@ -1,0 +1,39 @@
+.menu--closed.menu {
+    display: none;
+}
+
+.no-js.menu {
+    display: block;
+}
+
+.menu__list {
+    margin: 0;
+    padding: 0;
+    width: 78vw;
+    padding-left: 45px;
+    box-sizing: border-box;
+}    
+
+.menu--opened.menu {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    display: block;
+    height: calc(100vh - 30px);
+    box-shadow: 0 0 20px rgb(0 0 0 / 15%);
+    overflow-y: auto;
+    background-color: #0B0A0D;
+}
+
+@media (min-width: $tablet-width) {
+   .menu__list {
+        width: auto;        
+   }
+
+    .menu--closed.menu, menu {
+        display: block;
+        position: static;
+        height: 60px;
+        overflow-y: visible;
+    }
+}

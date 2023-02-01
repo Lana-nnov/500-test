@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Mplus";
+  src: url("../fonts/mplus1p.woff2") format("woff2"),
+    url("../fonts/mplus1p.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mplus-bold";
+  src: url("../fonts/mplus1p-bold.woff2") format("woff2"),
+    url("../fonts/mplus1p-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,36 @@
+.social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social__item {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.social__link {
+    position: relative;
+}
+
+.social__link:hover {
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: #ffffff;
+        z-index: 2000;
+    }
+}    
+
+@media (min-width: $tablet-width) {
+    .social {
+        justify-content: flex-start;
+    }    
+}    
