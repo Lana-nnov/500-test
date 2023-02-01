@@ -3,17 +3,18 @@
 (function () {
 
     var overlay = $('.modal-overlay');  
+    var menuToggle = $('.main-nav-wrap__toggle');
     var totalHeight=0;
     
 
     $(window).on('resize', function(e){
 
-      $('.menu').hover(function() {
+      $('.menu').hover, $('.menuToggle').hover(function() {
           overlay.fadeIn();
         },
         function(){
           overlay.fadeOut();        
-        })
+        })       
                 
       
         if(window.innerWidth < 768){
